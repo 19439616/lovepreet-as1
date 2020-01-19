@@ -1,0 +1,194 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color:rgb(69, 138, 165)
+
+}
+
+h1{
+    font-size: 40px;
+     border: double brown 10px;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     border-radius: 10px;
+     height: 50px;
+     width: 600px;
+     position: fixed;left: 25%;top: 2%;
+    }
+
+img{
+    height: 250px;
+    width: 350px;
+    border-radius: 96%;
+    position:fixed; left: 36%; bottom: 43%;
+}
+
+nav ul{
+    overflow: hidden;
+    list-style-type: none;
+    font-weight: bolder;
+    background-color: rgb(13, 0, 128);
+    padding: 0%;
+    position: fixed;left: 5%;bottom: 40%;
+    font-size: 15px;
+    color: white;
+}
+
+li {
+    float: none;
+
+}
+li a{
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+}
+li a:hover{
+    color:brown;
+}
+
+li a:active{
+    color: gold;
+}
+.icons a{
+    font-size: 65px;
+    color: goldenrod;
+    position:relative;left: 450px;top: 450px;
+    height: 65px;
+    width: 80px;
+    transition: 3s;
+
+}
+.icons a:hover{
+    color: rgb(122, 11, 76);
+    transition: 0.2s;}
+
+.box1{
+    display: block-flex ;
+    border-right:4px rgb(156, 76, 0) groove;
+    width: 300px;
+    height: 630px;
+    margin-top: 1%;
+}
+.box1 h2{
+position: relative;bottom:35%;
+color: indigo;
+font-size: 35px;
+margin:0%;
+}
+.box1 h3{
+    position: sticky;right:65%;bottom: 73%;
+    font-size: 25px;
+    color:orangered
+}
+.box1 img{
+    width: 200px;
+    margin-left: 7%;
+    height: 250px;
+    border-radius: 50%;
+    position: sticky;left: 2%; top:40%;
+    border:2px double red; 
+}
+.box1 ul{
+    color:yellow;
+    font-size: 20px;
+    position: sticky;left:10%;top: 85%;
+}
+.box2{
+    display:flex;
+    font-size: 20px;
+    border: 2px groove brown;
+    width: 750px;
+    position: sticky; left: 25%; bottom: 98%;
+}
+.box3{
+    display: block-flex;
+    font-size: 25px;
+    border: 3px dashed darkslategray;
+    width: 750px;
+    position: sticky; left: 25%; bottom:30%;
+    height: 200px;
+}
+.box4{
+    display: block-flex;
+    font-size:15px;
+    border: 2px solid black;
+    width: 750px;
+    position: sticky;left: 25%; bottom: 8%;
+}
+.box5{
+    display: flex;
+    font-size: 20px;
+    border: 2px groove orangered;
+    width: 230px;
+    position: sticky;left: 82%; bottom: 50%;
+    height: 250px;
+}
+.touch{
+    font-size: 30px;
+    font-family: fantasy;
+    position: fixed; right:50%; bottom: 40%;
+}
+/*reset*/
+html,body,div,figure,img,header,ul,li,a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/*layout*/
+.col-9{
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+.col-3{
+	max-width: 300px;
+	width: 33.333333%;
+	margin: auto;
+	box-sizing: border-box;
+}
+/*items*/
+.portfolio{
+	padding-top: 2em;
+	clear: both;
+}
+.menu{
+	padding: .3em .3em;
+}
+.wrap{
+	padding: .3em;
+}
+
+
+figure{
+	float: left;
+	position: relative;
+	line-height: 0;
+	padding: .3em;
+	cursor: pointer;
+}
+.img-wrap:before{
+	content: '';
+	position: absolute;
+	top: .3em;
+	left: .3em;
+	right: .3em;
+	bottom: .3em;
+	background-color: rgba(255,255,255,.7);
+	opacity: 0.5;
+	transition: opacity 2s,
+	background-color .4s; 
+}
+.img-wrap:hover:before{
+	background-color: rgba(251,11,63,1);
+	opacity: 0;
+
+}
+
+
+
+@media only screen and (min-width: 600px) {
+	header{float: left}
+	nav{float: right;
+		text-align: right;}
+}
